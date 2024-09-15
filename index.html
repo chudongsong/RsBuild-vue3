@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<script type="text/javascript">
+			this.globalThis || (this.globalThis = this);
+			(function () {
+				// 浏览器兼容性检测
+				function browserCompatible() {
+					var ieVersion = (function () {
+						var userAgent = navigator.userAgent,
+							isLessIE11 = userAgent.indexOf('compatible') > -1 && userAgent.indexOf('MSIE') > -1,
+							isEdge = userAgent.indexOf('Edge') > -1 && !isLessIE11,
+							isIE11 = userAgent.indexOf('Trident') > -1 && userAgent.indexOf('rv:11.0') > -1;
+						if (isLessIE11) {
+							var IEReg = new RegExp('MSIE (\\d+\\.\\d+);');
+							IEReg.test(userAgent);
+							var IEVersionNum = parseFloat(RegExp['$1']);
+							if ([7, 8, 9, 10].indexOf(IEVersionNum) > -1) {
+								return IEVersionNum;
+							} else {
+								return 6;
+							}
+						} else if (isEdge) {
+							return 'edge';
+						} else if (isIE11) {
+							return 11;
+						} else {
+							return -1;
+						}
+					})();
+					if (ieVersion != -1 && ieVersion <= 11 && ieVersion != 'edge') location.href = '/tips';
+					if (!location.origin) location.origin = location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '');
+				}
+
+				// 禁止后退
+				function blockHist() {
+					if (window.history && window.history.pushState) {
+						window.onpopstate = function () {
+							window.history.pushState('forward', null, '');
+							window.history.forward(1);
+						};
+					}
+					window.history.pushState('forward', null, ''); //在IE中必须得有这两行
+					window.history.forward(1);
+				}
+				browserCompatible();
+				blockHist();
+				window.vite_public_title = '<%= title %>'; // 网站标题
+				window.vite_public_menu = '<%= menu %>'; // 菜单栏目
+				window.vite_public_debug = '<%= debug %>'; // 是否开启调试模式
+				window.vite_public_pyversion = '<%= pyVersion %>'; // python版本
+				window.vite_public_version = '<%= panelVersion %>'; // 当前本地版本号
+				window.vite_public_ip = '<%= panelIp %>'; // 当前服务器IP地址
+				window.vite_public_brand = '<%= brand %>'; // 品牌
+				window.vite_public_product = '<%= product %>'; // 产品
+				window.vite_public_year = '<%= year %>'; // 年份
+				window.vite_public_cdn_url = '<%= cdnUrl %>'; // cdn地址
+				window.vite_public_request_token = '<%= requestToken %>'; // csrf_token
+				window.vite_public_soft_flush = '<%= flushSoft %>'; // 是否刷新软件列表，解决缓存问题
+				window.vite_public_encryption = '<%= encryptionCode %>'; // rsa加密公钥
+				window.vite_public_proxy_key = '<%= proxyKey %>'; // 代理服务信息
+				window.vite_public_proxy_ip = '<%= proxyIp %>'; // 代理服务信息
+				window.vite_public_proxy_port = '<%= proxyPort %>'; // 代理服务信息
+				window.vite_public_panel_type = '<%= otherJs %>'; // 面板类型
+				window.vite_public_file_version = '%VERSION-NUMBER%'; // 当前版本随机数，用于编译替换
+			})();
+		</script>
+	</head>
+	<body>
+		<div id="<%= mountId %>"></div>
+	</body>
+</html>

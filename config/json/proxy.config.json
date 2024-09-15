@@ -1,0 +1,521 @@
+{
+	"196": {
+		"HTTPS": true,
+		"IP": "192.168.1.196",
+		"API": "wqjWDNCdEXNTKUfulvDfsc1Wv03Nj9X7",
+		"PORT": 8888,
+		"SSH_PORT": 22,
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	},
+	"197": {
+		"HTTPS": true,
+		"IP": "192.168.1.197",
+		"API": "Z49uq2zPwJjepkNrkff0Nuw8bBPfGYc6",
+		"PORT": 8888,
+		"SSH_PORT": 22,
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	},
+	"247": {
+		"HTTPS": true,
+		"IP": "192.168.1.247",
+		"API": "roKFtcJUaJoI7I9rgOJYcYPofBxsNois",
+		"PORT": 8888,
+		"SSH_PORT": 22,
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	},
+	"155": {
+		"HTTPS": true,
+		"IP": "192.168.10.155",
+		"API": "wBxtDJCTus1v7QPJBZd3efZfRLfZnxhb",
+		"PORT": 22952,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "btpanel2023.."
+	},
+	"153": {
+		"HTTPS": true,
+		"IP": "192.168.69.153",
+		"API": "oxtSlLU6EXWTlHhRbwyVcD5AjRH3SXhE",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "yfb.bt.cn"
+	},
+	"65": {
+		"HTTPS": false,
+		"IP": "192.168.1.65",
+		"API": "STElxKdTafQ7E1fAhWIJD5uVF5BIlG3n",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "wzznb.com"
+	},
+	"60": {
+		"HTTPS": false,
+		"IP": "192.168.1.60",
+		"API": "TxB6y5gP26kCrbAaXiKrPyZJnB6LxmCD",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "wzznb.com"
+	},
+	"1.69": {
+		"HTTPS": false,
+		"IP": "192.168.1.69",
+		"API": "6tkISvGyxkUQu44t2tRBXYwKF6mDGEi1",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "wzznb.com"
+	},
+	"63": {
+		"HTTPS": false,
+		"IP": "192.168.1.63",
+		"API": "AHe0ZxJ1VPKUcHLx92B0VJ2mPtDPBWwj",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "wzznb.com"
+	},
+	"187": {
+		"HTTPS": true,
+		"IP": "192.168.10.187",
+		"API": "dMYhA4YvHuaGpSbQ3umlGfcyIYL6jw12",
+		"PORT": 14976,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "btpanel2023.."
+	},
+	"161": {
+		"HTTPS": true,
+		"IP": "192.168.69.161",
+		"API": "YouJUD64C44V2E6iAmDNFFliQkqSRvDl",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	},
+	"192": {
+		"HTTPS": false,
+		"IP": "192.168.66.192",
+		"API": "c5P4NJpWp8H237M2cFGfrvxhVPGPvymR",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "qweqwe123"
+	},
+	"23": {
+		"HTTPS": false,
+		"IP": "192.168.66.23",
+		"API": "dU5KaDCH6DlNiCCBEtt2Ck0t4ZskRae1",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "qweqwe123"
+	},
+	"149": {
+		"HTTPS": false,
+		"IP": "192.168.69.149",
+		"API": "rQYI4d7boL825XslhSsBQSbQXsOxCGox",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	},
+
+	"96": {
+		"HTTPS": false,
+		"IP": "192.168.77.96",
+		"API": "biCl673mtGsrlpJE0B39JrXX53IgOXNR",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	},
+	"30": {
+		"HTTPS": true,
+		"IP": "192.168.66.30",
+		"API": "YHFffFZtKlfJzGxoBpvpQUw99lrKu0dJ",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "fgq.bt.cn"
+	},
+	"185": {
+		"HTTPS": false,
+		"IP": "192.168.66.185",
+		"API": "nIq1UnABzEer4HKuFWzjHuvUbXvWOky3",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "iMaw3BbG4KJWEcjW"
+	},
+	"66155": {
+		"HTTPS": false,
+		"IP": "192.168.66.155",
+		"API": "nTyXEuruO5PRL5KtsklfENAYYZMMCEay",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	},
+	"158": {
+		"HTTPS": true,
+		"IP": "192.168.69.158",
+		"API": "8JlbL4MZUfVz0fyIlbHwkSw4gDBeB5Vk",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	},
+	"27": {
+		"HTTPS": false,
+		"IP": "192.168.10.27",
+		"API": "oVX6Ox7C7UoMeqIawtaUbdOPVqSPshYd",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	},
+	"37": {
+		"HTTPS": false,
+		"IP": "192.168.1.37",
+		"API": "u0EZksfReLO0cAJT4Q7Es2bJwutQ7CZv",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "68n3hDLb4FbZS42f"
+	},
+	"69162": {
+		"HTTPS": false,
+		"IP": "192.168.69.162",
+		"API": "PLcC7sfwy9E5kBj4pTij9PlHrQ0fEp8B",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	},
+	"77162": {
+		"HTTPS": false,
+		"IP": "192.168.77.162",
+		"API": "7Xu8AtBzaGhsX9WzJPYc73NKRJQrPOBc",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	},
+	"157": {
+		"HTTPS": true,
+		"IP": "192.168.69.157",
+		"API": "xtgk2OrkScIL4YsntHls0xgfKlneBSZg",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "sj.bt.cn"
+	},
+	"159": {
+		"HTTPS": false,
+		"IP": "192.168.69.159",
+		"API": "CAhFiQqybRLEalCEr1wtDD9xZbw9MBU8",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "yfb.bt.cn"
+	},
+	"114": {
+		"HTTPS": true,
+		"IP": "192.168.66.114",
+		"API": "xUZvPHHnFq2uWpMltoQhjCu2rYaZeM4O",
+		"PORT": 28929,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	},
+	"164": {
+		"HTTPS": true,
+		"IP": "192.168.69.164",
+		"API": "Xn9fRRg05wvO6t2XFf5haRF4mvZNjPgZ",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	},
+	"181": {
+		"HTTPS": false,
+		"IP": "192.168.69.181",
+		"API": "wznSIjI9JVC90Ki364ji3g3HSH8X0b4t",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	},
+	"182": {
+		"HTTPS": false,
+		"IP": "192.168.69.182",
+		"API": "Q9uqtecDjmBCirfPgalVo5tDwuMZuZ0D",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	},
+	"191": {
+		"HTTPS": false,
+		"IP": "192.168.69.191",
+		"API": "1tr5BZQ9DAQjspASQMMINmioH1APpRlC",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	},
+	"151": {
+		"HTTPS": false,
+		"IP": "192.168.69.151",
+		"API": "HMV0UM3e048YNRtu175IXzUX5Yl0AL20",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	},
+	"147": {
+		"HTTPS": false,
+		"IP": "192.168.69.147",
+		"API": "cOfFKn0sC4cY2y6dZcjlO5FUg9xRsp0k",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "swt.bt.cn"
+	},
+	"172": {
+		"HTTPS": false,
+		"IP": "192.168.69.172",
+		"API": "zMMf8GySmO20FGEaPaFqvYMs3xWB3PV4",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "swt.bt.cn"
+	},
+	"77154": {
+		"HTTPS": false,
+		"IP": "192.168.77.154",
+		"API": "4P4mS3LLJ3nRjeqJySIPl1eVRQTHr2nN",
+		"PORT": 31078
+	},
+	"195": {
+		"HTTPS": false,
+		"IP": "192.168.69.195",
+		"API": "RGiXf5z5lGpzGvZFkB8QpjCs2mUH8QBZ",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	},
+	"1181": {
+		"HTTPS": true,
+		"IP": "192.168.1.181",
+		"API": "29paXy2aY5B9a1rbdL3FiSpuVjloM1EZ",
+		"PORT": 40572,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "f46578723gSasfzxcsad"
+	},
+	"92": {
+		"HTTPS": false,
+		"IP": "192.168.77.92",
+		"API": "7EYwvDKIc0vVWjdanqZJWE9PLSPHB3Y3",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "qweqwe123"
+	},
+	"116": {
+		"HTTPS": false,
+		"IP": "192.168.66.116",
+		"API": "rmOmTBpsSMHlQNUldB9QxZW76V4aSAd3",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	},
+	"1116": {
+		"HTTPS": false,
+		"IP": "192.168.66.116",
+		"API": "238JKkoaEWLKWGhz97S5ffq5xqWBzvyj",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	},
+	"115": {
+		"HTTPS": false,
+		"IP": "192.168.66.115",
+		"API": "S0S1t68c7nTswej4G1c0DCyEBTc45KLW",
+		"PORT": 29637,
+		"SSH_PORT": "22",
+		"SSH_USER": "btcn",
+		"SSH_PASSWORD": "btpanel2023.."
+	},
+	"133": {
+		"HTTPS": false,
+		"IP": "192.168.69.133",
+		"API": "acvq5AQTV4j4P0kv0PRetrC5nvvj4coz",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "aq.bt.cn"
+	},
+	"108": {
+		"HTTPS": false,
+		"IP": "192.168.66.108",
+		"API": "50LFyQt6u8wLa42A4Jlsi3eHyGuGkinR",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "zkynb.com"
+	},
+	"110": {
+		"HTTPS": true,
+		"IP": "192.168.1.110",
+		"API": "9g472XFLCIbyswncsPQgYD3YUrwQRvMK",
+		"PORT": 17729,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	},
+	"69110": {
+		"HTTPS": false,
+		"IP": "192.168.69.110",
+		"API": "IOS2WNJNEBms66V9us9LeYDh8zxwSDQ4",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	},
+	"180": {
+		"HTTPS": false,
+		"IP": "192.168.66.180",
+		"API": "nNWGECKfPQZQmfgESt7rvy3bjKMeU9AL",
+		"PORT": 11433,
+		"SSH_PORT": "55522",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "N2DtxE6sbZLSHWXD"
+	},
+	"183": {
+		"HTTPS": false,
+		"IP": "192.168.69.183",
+		"API": "GyPWbrHf9LrSEs3pX9WJMnbLZ8vbUVjC",
+		"PORT": 42130,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "sj.bt.cn"
+	},
+	"70": {
+		"HTTPS": false,
+		"IP": "192.168.66.70",
+		"API": "fjGKfaFwt73G7eNCglq7kxCZq2TSW8Cn",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "qweqwe123"
+	},
+	"139": {
+		"HTTPS": false,
+		"IP": "139.9.189.212",
+		"API": "nNWGECKfPQZQmfgESt7rvy3bjKMeU9AL",
+		"PORT": 29792,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "8LGXk@gAUdgJ"
+	},
+	"160": {
+		"HTTPS": false,
+		"IP": "192.168.77.160",
+		"API": "iiLuyK53NPsBbduFEHCJPxR8MaWvylS1",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "btpanel2023.."
+	},
+	"103": {
+		"HTTPS": false,
+		"IP": "192.168.1.103",
+		"API": "66JsEMFWn9tNL6VRYFpXuS43Av0QWuAG",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	},
+	"test": {
+		"HTTPS": false,
+		"IP": "47.238.217.61",
+		"API": "nNWGECKfPQZQmfgESt7rvy3bjKMeU9AL",
+		"PORT": 39819,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "BBaota123456"
+	},
+	"95": {
+		"HTTPS": false,
+		"IP": "192.168.77.95",
+		"API": "Du2zo2ybPVJd3xbmdWGFtS71pfIwMK5z",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "qweqwe123"
+	},
+	"117": {
+		"HTTPS": false,
+		"IP": "192.168.66.117",
+		"API": "zlR7w9ygZW0RopEHca1umZY67K4olTeq",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	},
+	"119": {
+		"HTTPS": false,
+		"IP": "192.168.66.119",
+		"API": "2kULCe3aLe3Ga22Jh1cOGXa9aY2sBjvy",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "btpanel2023.."
+	},
+	"64": {
+		"HTTPS": false,
+		"IP": "192.168.1.64",
+		"API": "tu2ExC54TjChdomFa8ZMul6p54UVFpqw",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "bt.cn",
+		"SSH_PASSWORD": "wzznb.com"
+	},
+	"jp": {
+		"HTTPS": false,
+		"IP": "202.182.127.9",
+		"API": "tu2ExC54TjChdomFa8ZMul6p54UVFpqw",
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "$5Hjhk(ohiuNboi6"
+	},
+	"174": {
+		"HTTPS": false,
+		"IP": "192.168.69.174",
+		"API": "VUSPWdQCHYKLQTcI0twpiegrSHNVraKK",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	},
+	"90": {
+		"HTTPS": false,
+		"IP": "192.168.66.90",
+		"API": "k9jLuEUcLxvyULzf8rqTJ9z2U4Uyidlj",
+		"PORT": 8888,
+		"SSH_PORT": "22",
+		"SSH_USER": "root",
+		"SSH_PASSWORD": "www.bt.cn"
+	}
+}
