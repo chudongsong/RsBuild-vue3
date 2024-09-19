@@ -1,18 +1,89 @@
 {
-  "compilerOptions": {
-    "target": "ES2020",
-    "lib": ["DOM", "ES2020"],
-    "module": "ESNext",
-    "jsx": "preserve",
-    "jsxImportSource": "vue",
-    "noEmit": true,
-    "strict": true,
-    "skipLibCheck": true,
-    "isolatedModules": true,
-    "resolveJsonModule": true,
-    "moduleResolution": "bundler",
-    "useDefineForClassFields": true,
-    "allowImportingTsExtensions": true
-  },
-  "include": ["src"]
+	"compilerOptions": {
+		// 在.tsx文件里支持JSX
+		"jsx": "preserve",
+		"jsxImportSource": "vue",
+		// 编译输出目标ES版本
+		"target": "esnext",
+		// 采用模块系统
+		"module": "esnext",
+		// 解析非相对模块名的基准目录
+		"baseUrl": "./",
+		// 如何处理模块
+		"moduleResolution": "Node",
+		// 以严格模式解析
+		"strict": true,
+		// 时候包含可以用于 debug 的 sourceMap
+		"sourceMap": true,
+		// 忽略所有的声明文件 (*.d.ts) 的类型检查
+		"skipLibCheck": true,
+		// 从 tslib 导入外部帮助库: 比如__extends, __rest等
+		"importHelpers": true,
+		// 允许从没有设置默认导出的模块中默认导入
+		"allowSyntheticDefaultImports": true,
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		// 编译过程中需要引入的库文件的列表
+		"lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+		// 设置引入的定义文件
+		"types": ["node"],
+		// 指定特殊模板的路径
+		"paths": {
+			"@/*": ["src/*"],
+			"@api/*": ["src/api/*"],
+			"@router/*": ["src/router/*"],
+			"@views/*": ["src/views/*"],
+			"@layout/*": ["src/layout/*"],
+			"@store/*": ["src/store/*"],
+			"@locales/*": ["src/locales/*"],
+			"@styles/*": ["src/styles/*"],
+			"@components/*": ["src/components/*"],
+			"@public/*": ["src/views/public/*"],
+			"@utils/*": ["src/utils/*"],
+			"@home/*": ["src/views/home/*"],
+			"@site/*": ["src/views/site/*"],
+			"@ftp/*": ["src/views/ftp/*"],
+			"@database/*": ["src/views/database/*"],
+			"@docker/*": ["src/views/docker/*"],
+			"@control/*": ["src/views/control/*"],
+			"@firewall/*": ["src/views/firewall/*"],
+			"@waf/*": ["src/views/waf/*"],
+			"@ssl/*": ["src/views/ssl/*"],
+			"@files/*": ["src/views/files/*"],
+			"@logs/*": ["src/views/logs/*"],
+			"@term/*": ["src/views/term/*"],
+			"@crontab/*": ["src/views/crontab/*"],
+			"@soft/*": ["src/views/soft/*"],
+			"@config/*": ["src/views/config/*"],
+			"@assets/*": ["src/assets/*"]
+		}
+	},
+	// ts 管理的文件
+	"include": [
+		"src/**/*.ts",
+		"src/**/**/*.ts",
+		"src/**/*.jsx",
+		"src/**/*.tsx",
+		"src/*.vue",
+		"src/**/*.vue",
+		"src/**/**/*.vue",
+		"src/*.ts",
+		"src/*.d.ts",
+		"src/**/*.vue",
+		"src/**/*.d.ts",
+		"test/**/*.ts",
+		"test/*.ts",
+		"pages/**/*.ts",
+		"pages/*.ts",
+		"types/*.d.ts",
+		"config/*.ts",
+		"config/index.mts",
+		"config/gulp.config.js",
+		"src/views/firewall/hooks/.store.ts",
+		"config/build.file.js",
+		"temp1/global.ts",
+		"config/plugin/panel.compatible.ts"
+	],
+	// ts 排除的文件
+	"exclude": ["node_modules"]
 }

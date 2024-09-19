@@ -8,11 +8,14 @@
     "preview": "rsbuild preview"
   },
   "dependencies": {
+    "glob": "^11.0.0",
+    "ignore": "^6.0.2",
     "md5": "^2.3.0",
     "mkcert": "^3.2.0",
     "vue": "^3.5.3"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.1",
     "@rsbuild/core": "^1.0.1",
     "@rsbuild/plugin-babel": "^1.0.1",
     "@rsbuild/plugin-basic-ssl": "^1.1.1",
@@ -20,7 +23,10 @@
     "@rsbuild/plugin-type-check": "^1.0.1",
     "@rsbuild/plugin-vue": "^1.0.1",
     "@rsbuild/plugin-vue-jsx": "^1.0.1",
+    "@types/humps": "^2.0.6",
     "@types/md5": "^2.3.4",
+    "@types/minimist": "^1.2.5",
+    "@types/node": "^22.5.5",
     "@unocss/postcss": "^0.62.3",
     "@unocss/preset-rem-to-px": "^0.62.3",
     "humps": "^2.0.1",

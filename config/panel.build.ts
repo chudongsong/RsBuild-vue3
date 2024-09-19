@@ -1,9 +1,10 @@
-/* eslint-disable @typescript-eslint/naming-convention */
 import minimist from 'minimist';
-import humps from 'humps';
-import aliasInfo from './json/alias.config.json';
-import proxyInfo from './json/proxy.config.json';
+import humps from 'humps'; // 驼峰转换
 
+import aliasInfo from './json/alias.config.json'; // 别名配置
+import proxyInfo from './json/proxy.config.json'; // 代理配置
+
+// 代理信息类型
 type ProxyInfoType = {
 	[key: string]: {
 		HTTPS: boolean;
@@ -16,6 +17,9 @@ type ProxyInfoType = {
 	};
 };
 
+/**
+ * @description 开发工具类
+ */
 export default class DevTools {
 	// 命令行参数
 	public commandLineArgs: { [key: string]: string };
@@ -32,13 +36,13 @@ export default class DevTools {
 	};
 
 	// 是否是开发环境
-	public isDev: boolean = false;
+	public isDev = false;
 
 	// 环境变量
 	public prefixEnv: { [key: string]: string } = {};
 
 	// 代理配置
-	public proxyConfig: { [key: string]: any } = {
+	public proxyConfig: { [key: string]: AnyObject } = {
 		'/api': {
 			target: '',
 			changeOrigin: true,
@@ -47,12 +51,12 @@ export default class DevTools {
 	};
 
 	// html配置
-	public htmlConfig: { [key: string]: any } = {
+	public htmlConfig: { [key: string]: AnyObject | string } = {
 		title: 'Vue App',
 	};
 
 	// 别名配置
-	public sourceConfig: { [key: string]: any } = {
+	public sourceConfig: { [key: string]: AnyObject } = {
 		alias: {},
 		define: {},
 		entry: {},
@@ -90,7 +94,7 @@ export default class DevTools {
 			const info = (proxyInfo as unknown as ProxyInfoType)[ip]; // 获取代理信息，非标准写法
 			if (info) {
 				const { HTTPS, IP, PORT, SSH_PORT, SSH_USER, SSH_PASSWORD, API } = info;
-				console.log('proxyInfo', info, HTTPS);
+				// console.log('proxyInfo', info, HTTPS);
 				return {
 					https: HTTPS,
 					proxyIp: IP,
@@ -112,7 +116,7 @@ export default class DevTools {
 	 * @returns
 	 */
 
-	private _isDevelop = () => {
+	private _isDevelop = (): boolean => {
 		return process.env.NODE_ENV === 'development';
 	};
 
@@ -125,7 +129,8 @@ export default class DevTools {
 		const argv = minimist(process.argv.slice(3));
 		const params: { [key: string]: string } = {};
 		// 获取自定义参数
-		const customParams: any[] = argv._;
+		const customParams: string[] = argv._;
+		// biome-ignore lint/complexity/noForEach: <explanation>
 		config.forEach((item: string) => {
 			const index = customParams.indexOf(`--${item}`);
 			const value = customParams[index + 1];
@@ -141,9 +146,10 @@ export default class DevTools {
 	 * @description 获取环境变量
 	 * @param {string} key 环境变量key
 	 */
-	public getEnvPrefixVal = (prefix: string = 'RS_APP_') => {
+	public getEnvPrefixVal = (prefix = 'RS_APP_') => {
 		const env = process.env;
 		const result: { [key: string]: string } = {};
+		// biome-ignore lint/complexity/noForEach: <explanation>
 		Object.keys(env).forEach(key => {
 			if (key.startsWith(prefix)) {
 				const newKey = humps.camelize(key.replace(prefix, '').toLowerCase());
@@ -159,7 +165,7 @@ export default class DevTools {
 	public createProxyConfig = () => {
 		const { ip, port } = this.proxyInfo; // 获取代理信息
 		const { https } = this.proxyInfo; // 获取代理信息
-		console.log('proxyInfo', https);
+		// console.log('proxyInfo', https);
 		const proxyConfig = {
 			'/api': {
 				target: `${https ? 'https' : 'http'}://${ip || '192.168.1.196'}:${port || 8888}`, // 代理地址
@@ -168,7 +174,6 @@ export default class DevTools {
 				pathRewrite: { '^/api': '' }, // 重写路径
 			},
 		};
-		console.log('proxyConfig', proxyConfig);
 		return proxyConfig;
 	};
 
@@ -186,8 +191,8 @@ export default class DevTools {
 		const proxyInfo = this.proxyInfo;
 		return {
 			// 根据入口文件名称，返回对应的html模板
-			template({ entryName }) {
-				const templates = { index, software, login };
+			template({ entryName }: { entryName: string }) {
+				const templates: { [key: string]: string } = { index, software, login };
 				return templates[entryName] || index;
 			},
 			// 指定标题
@@ -195,7 +200,7 @@ export default class DevTools {
 			// 指定挂载点ID
 			mountId: 'root',
 			// 指定favicon
-			favicon: `./public/favicon.ico`,
+			favicon: './public/favicon.ico',
 			// 指定元数据和配置数据
 			meta: {
 				charset: 'UTF-8',
@@ -206,14 +211,15 @@ export default class DevTools {
 			// 标签注入
 			tags: [{ tag: 'link', attrs: { rel: 'stylesheet', href: `${this.isDev ? '/public/font' : '/static/vite/font'}/svgtofont.css` }, injectTo: 'head' }],
 			// 模板参数注入
-			templateParameters(defaultValue, { entryName }) {
+			// biome-ignore lint/suspicious/noConfusingVoidType: <explanation>
+			templateParameters: (defaultValue: Record<string, unknown>, { entryName }: { entryName: string }): Record<string, unknown> | void => {
 				// 默认值
 				const defaultVal = {
 					...defaultValue,
 					...prefixEnv,
 					...proxyInfo,
 				};
-				const params = {
+				const params: { [key: string]: Record<string, unknown> } = {
 					index: defaultVal,
 					software: defaultVal,
 					login: defaultVal,
